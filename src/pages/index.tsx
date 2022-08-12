@@ -26,6 +26,10 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   }
 
   const manulas = await searchManuals(keyword);
+  // 全件取得
+  // const manulas = await fetchManuals(keyword)
+  // 複数列を対象に全文検索
+  // const manulas = await searchManualsMultipleColumns(keyword)
 
   return {
     props: {
